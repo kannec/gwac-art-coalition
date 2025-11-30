@@ -1,0 +1,241 @@
+*{
+    color: #16357A;
+}
+
+.body-text{
+    font-family: 'Open Sans';
+}
+
+.body-right{
+    text-align: right;
+    font-family: 'Open Sans';
+}
+
+.card{
+    margin: 0 0.5em;
+    /* Don't want borders around card, so make override styling with !important */
+    border: none !important;
+}
+
+.card-content{
+    text-align: center;
+}
+
+.card-heading{
+     font-family: "sofia-pro-soft", sans-serif;
+     font-weight: 700;
+     text-align: center;
+     color:#16357A
+}
+
+.carousel-inner{
+    padding: 1em;
+}
+
+#ceramics-pic{
+    width:62%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.con{
+    border-radius: 10px;
+}
+
+.concert-pic{
+    width: 350px;
+    height: auto;
+}
+
+.concert-pic img{
+    width:100%;
+    object-fit: cover;
+}
+
+.donate{
+    background: linear-gradient(90deg, #12DDC0 0%, #0E97DC 74.04%, #00496A 100%), linear-gradient(90deg, #FF7A37 0%, #4A60F5 100%), #FFF;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.30);
+    padding: 2em;
+}
+
+footer{
+    background-color: #C0EFF5;
+}
+
+.group-pic img{
+    width: 50%;
+}
+
+.gwac-value{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 10em
+}
+
+.gwac-card{
+    width:85%;
+    display: flex;
+    margin: 0.5em;
+    padding: 1.5em;
+    border-radius: 10px;
+    align-items: start;
+    gap: 1em;
+    background-color: #AFE7FF;
+}
+
+.gwac-card-body{
+    font-family: 'Open Sans';
+}
+
+/* Changing icon sizes */
+.gwac-card img{
+    width: 2em;
+    height: auto;
+}
+
+.gwac-card-heading{
+    font-family: "sofia-pro-soft", sans-serif;
+    font-weight: 700;
+}
+
+.left-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+#logo{
+    width:70px;
+}
+
+#home-top{
+    display: flex;
+    padding: 5em 20em;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+
+}
+
+/* Styling investors section */
+.investors{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 2em;
+}
+
+@media screen and (max-width: 900px){
+    #ceramics-pic{
+        height: 250px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    #home-top {
+        flex-direction: column;
+        padding: 5em 0; /* smaller padding for mobile */
+        gap: 0.5em;
+    }
+    .left-align {
+        align-items: center;
+        padding: 4em;
+        text-align: center;
+    }
+    .body-right, .mission h3{
+        align-items: center;
+        text-align: center;
+    }
+    .mission-text{
+        flex-wrap: wrap;
+    }
+    .mission{
+        flex-wrap: wrap;
+    }
+    .con{
+        display: none;
+    }
+    .gwac-card{
+        width: 95%;
+        margin: 0.5em;
+
+    }
+    .gwac-value{
+        margin: 0 2em;
+    }
+    .without-our{
+        margin: 0;
+        align-items: normal;
+        flex-wrap: wrap;
+    }
+    #strength-arts{
+        font-size: 1em;
+    }
+    #without-heading{
+        text-align: center;
+    }
+
+}
+
+@media (min-width:798px){
+    .carousel-inner{
+        display: flex;
+    }
+    .carousel-item{
+        margin-right: 0;
+        /* Want 4 cards to be displayed and each take up 1/4 of the width */
+        flex: 0 0 calc(100%/3);
+        display: block;
+
+    }
+}
+
+.mission{
+    display: flex;
+    padding: 56px;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    background-color: #C0EFF5;
+}
+
+.mission-text{
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    text-align: right
+}
+
+#our-mission{
+    text-align: right;
+    font-family: "sofia-pro-soft", sans-serif;
+    font-weight: 700;
+}
+
+#strength-arts{
+    font-family: "sofia-pro-soft", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+}   
+
+#without-heading{
+    font-family: "sofia-pro-soft", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    text-align: left;
+}
+
+.without-our{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    margin: 10em 6em;
+}
+
+.without-our img{
+    width: 50%;
+}
+
