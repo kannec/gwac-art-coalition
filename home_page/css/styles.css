@@ -1,7 +1,132 @@
+
+/* Global Styles */
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     color: #16357A;
 }
 
+/* Navigation */
+.main-nav {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links a {
+    color: #16357a;
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    color: #4fb0b9;
+    text-decoration: underline;
+}
+
+.nav-links button {
+    color: #16357a;
+    font-weight: bold;
+    display: flex;
+    width: 191px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 3px solid #12DDC0;
+    background: #C0EFF5;
+    box-shadow: 0 0 10px 2px rgba(74, 96, 245, 0.20);
+}
+
+/* Changes color on hover */
+.nav-links button:hover {
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    width: 191px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 3px solid #12DDC0;
+    background: linear-gradient(90deg, #12DDC0 0%, #0E97DC 74.04%, #00496A 100%), linear-gradient(90deg, #FF7A37 0%, #4A60F5 100%), #FFF;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.30);
+}
+
+
+/* Opening section */
+.left-align a{
+    background: #16357A;
+    border: none;
+    font-family: 'Open Sans';
+}
+
+.left-align a:hover{
+    background: none;
+    border: 1px solid #0797D3;
+    color: #0797D3;
+    font-family: 'Open Sans';
+
+}
+
+/* Mission */
+
+.learn-more{
+    font-family: 'Open Sans';
+    text-decoration: underline;
+    color: #16357A;
+}
+
+/* Carousel */
+
+.multi-carousel .carousel-inner {
+  display: flex !important;
+  flex-wrap: nowrap;
+  overflow: hidden !important;
+}
+
+.multi-carousel .carousel-item {
+  flex: 0 0 25% !important; /* 4 items */
+  max-width: 25% !important;
+}
+
+.left-align a{
+    background: #16357A;
+    border: none;
+    font-family: 'Open Sans';
+}
+
+.left-align a:hover{
+    background: none;
+    border: 1px solid #0797D3;
+    color: #0797D3;
+    font-family: 'Open Sans';
+
+}
+
+/* RAW Connection */
+
+/* Without Investors */
+
+/* Donate */
+
+/* Footer */
 .body-text{
     font-family: 'Open Sans';
 }
@@ -9,6 +134,10 @@
 .body-right{
     text-align: right;
     font-family: 'Open Sans';
+}
+
+.my-button{
+    background-color: #16357A;
 }
 
 .card{
@@ -25,7 +154,7 @@
      font-family: "sofia-pro-soft", sans-serif;
      font-weight: 700;
      text-align: center;
-     color:#16357A
+     color:#16357A;
 }
 
 .carousel-inner{
@@ -36,6 +165,10 @@
     width:62%;
     object-fit: cover;
     border-radius: 15px;
+}
+
+.check-out a{
+    justify-content: center;
 }
 
 .con{
@@ -56,10 +189,79 @@
     background: linear-gradient(90deg, #12DDC0 0%, #0E97DC 74.04%, #00496A 100%), linear-gradient(90deg, #FF7A37 0%, #4A60F5 100%), #FFF;
     box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.30);
     padding: 2em;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    gap: 2em;
 }
 
-footer{
-    background-color: #C0EFF5;
+/* Footer */
+.footer {
+    background-color: var();
+    padding: 60px 100px;
+    margin-top: 60px;
+}
+
+.footer-logo-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.logo-section img{
+    width: 150px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.footer-links h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-blue);
+    margin-bottom: 16px;
+}
+
+.footer-links p,
+.footer-links a {
+    font-size: 20px;
+    color: var(--primary-blue);
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.fund{
+    font-family: "sofia-pro-soft", sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.fund-content p{
+    color: #ffffff;
+}
+
+.fund-content a{
+    background-color: #16357A;
+    border: none;
+}
+
+.fund-picture{
+    width: 40%;
+}
+
+.fund-picture img{
+    width: 100%;
+    display: block;
+    border-radius: 12px;
 }
 
 .group-pic img{
@@ -111,6 +313,10 @@ footer{
     width:70px;
 }
 
+.logo-small{
+    width: 70px;
+}
+
 #home-top{
     display: flex;
     padding: 5em 20em;
@@ -133,6 +339,14 @@ footer{
         height: 250px;
         overflow: hidden;
         border-radius: 15px;
+    }
+    .donate{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fund-content{
+        text-align: center;
     }
     #home-top {
         flex-direction: column;
@@ -176,20 +390,11 @@ footer{
     #without-heading{
         text-align: center;
     }
+    .multi-carousel .carousel-item {
+    flex: 0 0 50% !important; /* 2 items */
+    max-width: 50% !important;
+  }
 
-}
-
-@media (min-width:798px){
-    .carousel-inner{
-        display: flex;
-    }
-    .carousel-item{
-        margin-right: 0;
-        /* Want 4 cards to be displayed and each take up 1/4 of the width */
-        flex: 0 0 calc(100%/3);
-        display: block;
-
-    }
 }
 
 .mission{
@@ -223,7 +428,7 @@ footer{
 #without-heading{
     font-family: "sofia-pro-soft", sans-serif;
     font-weight: 700;
-    font-size: 3em;
+    font-size: 2em;
     text-align: left;
 }
 
