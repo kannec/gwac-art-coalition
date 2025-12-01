@@ -6,9 +6,9 @@
     <title>Artist Directory - Greater Westmoreland Arts Coalition</title>
     
     <!-- CSS -->
-    <link href="styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link href="styles.css" rel="stylesheet">    
+  
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
+  </head>
 <body>
     <!-- Top Header -->
     <div class="top-header">
@@ -64,19 +64,22 @@
     </div>
 
     <!-- Filter Tabs -->
-    <div class="container">
-        <div class="filter-tabs mx-auto">
-            <button class="active">Artists</button>
-            <button>Art Organizations</button>
-        </div>
-    </div>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Artist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Art Organization</a>
+        </li> 
+    </ul>
 
     <!-- Search and Filters -->
     <div class="container search-filter-section">
         <div class="d-flex gap-3 align-items-center flex-wrap">
-          <div class="search-box">
-              <input id="searchInput" type="text" placeholder="Search ...">
-          </div>  
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Select Specialty
@@ -186,78 +189,199 @@
                             <td>paint, ink, wood, metal</td>
                             <td>Pittsburgh</td>
                         </tr>
-                        <tr>
-                            <td>Wicked Pittsburgh, Michael Schwarz</td>
+                        <tr class="artist-row">
+                            <td>Wicked Pittsburgh, Michael Schwarz
+                              <div class="artist-photos">
+                                <div class="artist-photos-grid">
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+                                    </div>
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
                             <td><a href="mailto:mikeschwarts@gmail.com">mikeschwarts@gmail.com</a></td>
                             <td>123-456-7890</td>
                             <td>photography, videography, journalism</td>
                             <td>Pittsburgh</td>
                         </tr>
-                        <tr class="table-info">
-                            <td>Robert Johnson</td>
+                        <tr class="table-info artist-row">
+                            <td>Robert Johnson
+                              <div class="artist-photos">
+                                <div class="artist-photos-grid">
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+                                    </div>
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
                             <td><a href="mailto:robertjohnson@gmail.com">robertjohnson@gmail.com</a></td>
                             <td>123-456-7890</td>
                             <td>digital, photography</td>
                             <td>Seattle</td>
                         </tr>
-                        <tr>
-                            <td>Black River Arts, Allison Mullen</td>
+                        <tr class="artist-row">
+                            <td>Black River Arts, Allison Mullen
+                                <div class="artist-photos">
+                                <div class="artist-photos-grid">
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+                                    </div>
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
                             <td><a href="mailto:sales@blackriverarts.com">sales@blackriverarts.com</a></td>
                             <td>123-456-7890</td>
                             <td>wood, stone, signs engraving</td>
                             <td>Derry</td>
                         </tr>
-                        <tr class="table-info">
-                            <td>Greensburg Art Center, D'Anna Kromer</td>
+                        <tr class="artist-row table-info">
+                            <td>Greensburg Art Center, D'Anna Kromer
+                                <div class="artist-photos">
+                                <div class="artist-photos-grid">
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+                                    </div>
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
                             <td><a href="mailto:dannakromer@gmail.com">dannakromer@gmail.com</a></td>
                             <td>123-456-7890</td>
                             <td>paint, clay, textiles</td>
                             <td>Greensburg</td>
                         </tr>
-                        <tr>
-                            <td>Poison Pen Studio, Kevin Wolford</td>
+                        <tr class="artist-row">
+                            <td>Poison Pen Studio, Kevin Wolford
+                                 <div class="artist-photos">
+                                <div class="artist-photos-grid">
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+                                    </div>
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
                             <td><a href="mailto:kevinwolford@gmail.com">kevinwolford@gmail.com</a></td>
                             <td>123-456-7890</td>
                             <td>paint, ink, wood, metal</td>
                             <td>Pittsburgh</td>
                         </tr>
-                        <tr class="table-info">
-                            <td>Wicked Pittsburgh, Michael Schwarz</td>
+                        <tr class="table-info artist-row">
+                            <td>Wicked Pittsburgh, Michael Schwarz
+                                <div class="artist-photos">
+                                <div class="artist-photos-grid">
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+                                    </div>
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
                             <td><a href="mailto:mikeschwarts@gmail.com">mikeschwarts@gmail.com</a></td>
                             <td>123-456-7890</td>
                             <td>photography, videography, journalism</td>
                             <td>Pittsburgh</td>
                         </tr>
-                        <tr>
-                            <td>Robert Johnson</td>
+                        <tr class="artist-row">
+                            <td>Robert Johnson
+                                <div class="artist-photos">
+                                <div class="artist-photos-grid">
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+                                    </div>
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
                             <td><a href="mailto:robertjohnson@gmail.com">robertjohnson@gmail.com</a></td>
                             <td>123-456-7890</td>
                             <td>digital, photography</td>
                             <td>Seattle</td>
                         </tr>
-                        <tr class="table-info">
-                            <td>Black River Arts, Allison Mullen</td>
+                        <tr class="table-info artist-row">
+                            <td>Black River Arts, Allison Mullen
+                                <div class="artist-photos">
+                                <div class="artist-photos-grid">
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+                                    </div>
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
                             <td><a href="mailto:sales@blackriverarts.com">sales@blackriverarts.com</a></td>
                             <td>123-456-7890</td>
                             <td>wood, stone, signs engraving</td>
                             <td>Derry</td>
                         </tr>
-                        <tr>
-                            <td>Greensburg Art Center, D'Anna Kromer</td>
+                        <tr class="artist-row">
+                            <td>Greensburg Art Center, D'Anna Kromer
+                                <div class="artist-photos">
+                                <div class="artist-photos-grid">
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+                                    </div>
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
                             <td><a href="mailto:dannakromer@gmail.com">dannakromer@gmail.com</a></td>
                             <td>123-456-7890</td>
                             <td>paint, clay, textiles</td>
                             <td>Greensburg</td>
                         </tr>
-                        <tr class="table-info">
-                            <td>Black River Arts, Allison Mullen</td>
+                        <tr class="table-info artist-row">
+                            <td>Black River Arts, Allison Mullen
+                              <div class="artist-photos">
+                                <div class="artist-photos-grid">
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+                                    </div>
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
                             <td><a href="mailto:sales@blackriverarts.com">sales@blackriverarts.com</a></td>
                             <td>123-456-7890</td>
                             <td>wood, stone, signs engraving</td>
                             <td>Derry</td>
                         </tr>
-                        <tr>
-                            <td>Greensburg Art Center, D'Anna Kromer</td>
+                        <tr class="artist-row">
+                            <td>Greensburg Art Center, D'Anna Kromer
+                                 <div class="artist-photos">
+                                <div class="artist-photos-grid">
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+                                    </div>
+                                    <div class="artist-photo-item">
+                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
                             <td><a href="mailto:dannakromer@gmail.com">dannakromer@gmail.com</a></td>
                             <td>123-456-7890</td>
                             <td>paint, clay, textiles</td>
@@ -266,6 +390,100 @@
                     </tbody>
       </table>
     
+    <!--Collapse for mobile-->
+        <p class="d-inline-flex gap-1">
+            <div class="collapse-wrapper collapse-blue" data-bs-toggle="collapse" href="#collapse-item-1" role="button" aria-expanded="false" aria-controls="collapse-item-1">
+                <img src="./images/plus.svg">
+                <div>
+                <p>Black River Arts, Allison Mullen</br>
+                    sales@blackriverarts.com</br>
+                    Advertising, sign maker<br>
+                    wood, stone, signs engraving</br>
+                    Derry</p>
+                </div>
+            </div>
+        </p>
+        <div class="collapse" id="collapse-item-1">
+        <div class="artist-photos-grid">
+            <div class="artist-photo-item">
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+            </div>
+            <div class="artist-photo-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+            </div>
+        </div>
+    </div>
+
+        <p class="d-inline-flex gap-1">
+            <div class="collapse-wrapper" data-bs-toggle="collapse" href="#collapse-item-2" role="button" aria-expanded="false" aria-controls="collapse-item-2">
+                <img src="./images/plus.svg">
+                <div>
+                <p>Greensburgh Art Center, D’Anna Kromer</br>
+                    dannakromer@gmail.com</br>
+                    Painter, Mixed Media, Sculpturer<br>
+                    paint, clay, textiles</br>
+                    Greensburg</p>
+                </div>
+            </div>
+        </p>
+        <div class="collapse" id="collapse-item-2">
+        <div class="artist-photos-grid">
+            <div class="artist-photo-item">
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+            </div>
+            <div class="artist-photo-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+            </div>
+        </div>
+    </div>
+
+            <p class="d-inline-flex gap-1">
+            <div class="collapse-wrapper collapse-blue" data-bs-toggle="collapse" href="#collapse-item-3" role="button" aria-expanded="false" aria-controls="collapse-item-1">
+                <img src="./images/plus.svg">
+                <div>
+                <p>Black River Arts, Allison Mullen</br>
+                    sales@blackriverarts.com</br>
+                    Advertising, sign maker<br>
+                    wood, stone, signs engraving</br>
+                    Derry</p>
+                </div>
+            </div>
+        </p>
+        <div class="collapse" id="collapse-item-3">
+        <div class="artist-photos-grid">
+            <div class="artist-photo-item">
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+            </div>
+            <div class="artist-photo-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+            </div>
+        </div>
+    </div>
+
+            <p class="d-inline-flex gap-1">
+            <div class="collapse-wrapper" data-bs-toggle="collapse" href="#collapse-item-4" role="button" aria-expanded="false" aria-controls="collapse-item-2">
+                <img src="./images/plus.svg">
+                <div>
+                <p>Greensburgh Art Center, D’Anna Kromer</br>
+                    dannakromer@gmail.com</br>
+                    Painter, Mixed Media, Sculpturer<br>
+                    paint, clay, textiles</br>
+                    Greensburg</p>
+                </div>
+            </div>
+        </p>
+        <div class="collapse" id="collapse-item-4">
+        <div class="artist-photos-grid">
+            <div class="artist-photo-item">
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=300&h=300&fit=crop" alt="Wood engraving">
+            </div>
+            <div class="artist-photo-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Custom signs">
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- Pagination -->
     <nav aria-label="Page navigation example">
@@ -303,10 +521,7 @@
                 <div class="col-md-6">
                     <div class="footer-logo-section">
                         <div class="logo-section">
-                            <svg width="77" height="71" viewBox="0 0 77 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="38.5" cy="35.5" r="35.5" fill="#4fb0b9"/>
-                                <path d="M38.5 10L45 25H55L47 35L50 50L38.5 42L27 50L30 35L22 25H32L38.5 10Z" fill="white"/>
-                            </svg>
+                            <img src="./images/logo.png">
                             <div class="logo-text" style="color: #16357a;">
                                 <p>GREATER</p>
                                 <p>WESTMORELAND</p>
